@@ -5,11 +5,6 @@ import pathlib
 import netifaces as ni
 from shells import shells
 
-shell_type = ""
-ethernet_interface = ""
-port = ""
-ip = ""
-
 def main():
 
     #Build the argument parse object
@@ -34,9 +29,9 @@ def main():
         ip = get_ip_from_ni(ethernet_interface)
   
     #TODO: collection of revshells
-    parser.add_argument("--type", "-t", help="type of reverse shell", required=True)
+    parser.add_argument("type", help="type of reverse shell")
 
-    parser.add_argument("--ip", "-i", help="ip address")
+    parser.add_argument("--host", "-h", help="host ip address")
 
     parser.add_argument("--port", "-p", help="port")
 
@@ -46,8 +41,8 @@ def main():
     if args.type is not None:
         shell_type = args.type
     
-    if args.ip is not None:
-        ip = args.ip
+    if args.host is not None:
+        ip = args.host
     
     if args.port is not None:
         port = args.port
