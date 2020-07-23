@@ -8,7 +8,7 @@ Configuration
 ----------------
 In ```pms.conf``` file you can set your  ```ethernet_interface``` name, ```ip``` address or ```port``` number\
 If your ```ip``` address is set in the conf file it won't use the ```ethernet_interface``` address\
-You can specifile your ```ip``` address or ```port``` number as an argument too.
+You can specify your ```ip``` address or ```port``` number as an argument too.
 
 Arguments
 -----------------
