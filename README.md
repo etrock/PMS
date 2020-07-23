@@ -17,6 +17,8 @@ Arguments
 ```-i --ip```: *optional*, IP address\
 ```-p --port```: *optional* port number\
 
+shell types : bash, perl, python, php (shell), ruby, nc, nc-2, java, php-rev (file)
+
 
 Usage
 ----------------
