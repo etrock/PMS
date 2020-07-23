@@ -1,6 +1,7 @@
 import configparser
 import argparse
 import sys
+import pathlib
 import netifaces as ni
 from shells import shells
 
@@ -55,6 +56,8 @@ def main():
 
 # read config file
 def read_config(config_file):
+    if config_file == "pms.conf":
+        config_file = pathlib.Path(__file__).parent.absolute() / "pms.conf"
     config = configparser.RawConfigParser()
     config.read(config_file)
     details_dict = dict(config.items('default'))
