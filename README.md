@@ -10,6 +10,14 @@ Install
 $ git clone https://github.com/etrock/PMS.git
 $ cd PMS
 ```
+Change ```ethernet_interface``` name in ```pms.conf```. The default is ```eth1```
+```
+[default]
+
+# default ethernet interface name
+ethernet_interface = eth1 
+```
+
 You can add to your ~/.bashrc file
 ```
 alias pms='python3 "<pms path>/pms.py"'
